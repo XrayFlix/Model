@@ -3,7 +3,7 @@ import { Modal } from './components/Modal';
 import './App.css';
 
 function App() {
-  const [isModalOpen, setIsModalOpen] = useState(false); // Логический тип для открытия/закрытия
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
   function openModal() {
     setIsModalOpen(true);
@@ -19,11 +19,12 @@ function App() {
       <button onClick={openModal}>Открыть окно</button>
       {isModalOpen && (
         <Modal onClose={closeModal}>
-          Это содержимое модального окна!
+          Cодержимое модального окна
         </Modal>
       )}
     </div>
   );
 }
+
 
 export default App;
